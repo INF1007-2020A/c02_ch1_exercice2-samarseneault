@@ -4,6 +4,7 @@
 def capitaliser_pays(nom):
     # Ceci est la version pour le/la professeur(e)
     # TODO completer la fonction
+    #2
     return nom
 
 
