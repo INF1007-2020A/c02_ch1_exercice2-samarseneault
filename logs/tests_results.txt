@@ -1,0 +1,56 @@
+test_capitalize_first_letter (__main__.TestExercice) ... ok
+test_linking_words (__main__.TestExercice) ... FAIL
+test_lower_case_names (__main__.TestExercice) ... FAIL
+test_upper_case_names (__main__.TestExercice) ... FAIL
+
+======================================================================
+FAIL: test_linking_words (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 64, in test_linking_words
+    'Les mots de liaison doivent etre en minuscule'
+AssertionError: Lists differ: ['Antigua and barbuda', 'Bosnia and herzegovina'] != ['Antigua and Barbuda', 'Bosnia and Herzegovina']
+
+First differing element 0:
+'Antigua and barbuda'
+'Antigua and Barbuda'
+
+- ['Antigua and barbuda', 'Bosnia and herzegovina']
+?               ^                     ^
+
++ ['Antigua and Barbuda', 'Bosnia and Herzegovina']
+?               ^                     ^
+ : Les mots de liaison doivent etre en minuscule
+
+======================================================================
+FAIL: test_lower_case_names (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 39, in test_lower_case_names
+    'Certaines lettres ne doivent pas etre en minuscules'
+AssertionError: Lists differ: ['Afg[62 chars] and barbuda', 'Argentina', 'Armenia', 'Austra[563 chars]ana'] != ['Afg[62 chars] and Barbuda', 'Argentina', 'Armenia', 'Austra[563 chars]ana']
+
+First differing element 5:
+'Antigua and barbuda'
+'Antigua and Barbuda'
+
+Diff is 1349 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en minuscules
+
+======================================================================
+FAIL: test_upper_case_names (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 48, in test_upper_case_names
+    'Certaines lettres ne doivent pas etre en majuscule'
+AssertionError: Lists differ: ['Afg[62 chars] and barbuda', 'Argentina', 'Armenia', 'Austra[563 chars]ana'] != ['Afg[62 chars] and Barbuda', 'Argentina', 'Armenia', 'Austra[563 chars]ana']
+
+First differing element 5:
+'Antigua and barbuda'
+'Antigua and Barbuda'
+
+Diff is 1349 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en majuscule
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+FAILED (failures=3)
